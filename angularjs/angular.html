@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+    
+    <style>
+    .asd{
+        background:blue;
+        padding: 10px;
+    }
+    .red{
+        background: red;
+        padding: 10px;
+    }
+    .selected{
+        background: green;
+        padding: 10px;
+    }
+
+        
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" placeholder="name" ng-model="asd" />
+        <div ng-class="asd"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, iusto culpa expedita eius praesentium ipsam, 
+            sed amet molestias, ducimus unde accusamus commodi quasi incidunt dolores in velit pariatur veniam. Similique.
+        </div>
+
+
+         <textarea ng-model="text"></textarea>
+            <h1> {{text}}</h1>
+
+
+           hide show
+            <input type="checkbox" ng-model="hide"/>
+            <div ng-hide="hide">ghjkllllllllllllllllllll</div>
+            <div ng-show="hide">loremnjh</div>
+
+            <input type="checkbox" ng-model="selected"/>
+            <select>
+                <option> vanaja</option>
+                <option ng-selected="selected">vanu</option>
+                <option> inchu</option>
+            </select></div></br>
+
+            <input type="radio" name="name" ng-model="selected"/>vana</br>
+            <div ng-class="selected"></div>
+    </div>
+    
+</body>
+</html>
